@@ -1,0 +1,6 @@
+run="""
+cat $WORKDIR/old-bashrc > ~/.bashrc
+cat $WORKDIR/main.sh >> ~/.bashrc
+bash
+"""
+onBoot="bash /home/runner/Okteto-Controller/onBoot.sh"
