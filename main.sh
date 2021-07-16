@@ -44,7 +44,7 @@ alias chectl=~/.local/bin/chectl/bin/run
 
 # Set Okteto k8s credentials
 mkdir -p ~/.kube
-echo $OKTETO_KUBECONFIG > ~/.kube/okteto-kube.config
+echo "$OKTETO_KUBECONFIG" > ~/.kube/okteto-kube.config
 export KUBECONFIG=~/.kube/okteto-kube.config
 
 
