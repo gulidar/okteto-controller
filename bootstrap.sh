@@ -1,3 +1,5 @@
+export SAVED_WORKDIR=$PWD
+
 # Set up ~/.local/bin
 mkdir -p ~/.local/bin
 export PATH=$PATH:$HOME/.local/bin
@@ -41,4 +43,4 @@ export KUBECONFIG=~/.kube/okteto-kube.config
 
 
 # Return to work directory
-cd $WORKDIR
+cd $SAVED_WORKDIR

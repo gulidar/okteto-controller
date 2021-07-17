@@ -1,6 +1,10 @@
 run="""
-cat $WORKDIR/old-bashrc > ~/.bashrc
-cat $WORKDIR/main.sh >> ~/.bashrc
+export OKTETO_CONTROLLER_WORKDIR=/home/runner/Okteto-Controller
+cat $OKTETO_CONTROLLER_WORKDIR/old-bashrc > $HOME/.bashrc
+cat $OKTETO_CONTROLLER_WORKDIR/main.sh >> $HOME/.bashrc
 bash
 """
-onBoot="bash /home/runner/Okteto-Controller/onBoot.sh"
+onBoot="""
+export OKTETO_CONTROLLER_WORKDIR=/home/runner/Okteto-Controller
+bash $OKTETO_CONTROLLER_WORKDIR/onBoot.sh
+"""
