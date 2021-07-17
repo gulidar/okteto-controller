@@ -29,6 +29,12 @@ then
 fi
 
 
+# Install operator-sdk
+if ! command -v operator-sdk &> /dev/null
+then
+    bash $OKTETO_CONTROLLER_WORKDIR/individual-install-scripts/operator-sdk.sh
+fi
+
 # Install okteto CLI
 # See https://get.okteto.com
 if ! command -v okteto &> /dev/null
