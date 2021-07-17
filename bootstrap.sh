@@ -16,6 +16,19 @@ then
 fi
 
 
+# Install Helm CLI
+if ! command -v helm &> /dev/null
+then
+    echo "Downloading Helm CLI..."
+    export FILENAME="helm-v3.6.3-linux-amd64.tar.gz"
+    curl "https://get.helm.sh/$FILENAME" -o $FILENAME
+    tar -zxvf ./$FILENAME
+    mv ./linux-amd64/helm ./helm
+    rm -rf ./linux-amd64
+    rm $FILENAME
+fi
+
+
 # Install okteto CLI
 # See https://get.okteto.com
 if ! command -v okteto &> /dev/null
