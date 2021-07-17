@@ -6,5 +6,5 @@ bash
 """
 onBoot="""
 export OKTETO_CONTROLLER_WORKDIR=/home/runner/okteto-controller
-bash $OKTETO_CONTROLLER_WORKDIR/onBoot.sh
+. $OKTETO_CONTROLLER_WORKDIR/onBoot.sh
 """

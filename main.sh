@@ -6,5 +6,5 @@ log() {
 }
 log "########"
 
-. ./bootstrap.sh
+. $OKTETO_CONTROLLER_WORKDIR/bootstrap.sh
 #. ./deploy.sh
