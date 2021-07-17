@@ -11,7 +11,7 @@ Don't forget about secrets!
 * OKTETO_CUBECONFIG
 
 And about environment variables.
-* OKTETO_CONTROLLER-WORKDIR
+* OKTETO_CONTROLLER_WORKDIR
     * .replit
         * `run` section
         * `onBoot` section

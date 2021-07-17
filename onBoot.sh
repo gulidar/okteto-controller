@@ -1,4 +1,4 @@
-export OKTETO_CONTROLLER_WORKDIR=/home/runner/Okteto-Controller
+export OKTETO_CONTROLLER_WORKDIR=/home/runner/okteto-controller
 
 export ONBOOT_LOG_FILE=$OKTETO_CONTROLLER_WORKDIR/onBoot.log
 echo "########" >> $ONBOOT_LOG_FILE
