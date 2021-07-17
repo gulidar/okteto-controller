@@ -15,4 +15,3 @@ And about environment variables.
     * .replit
         * `run` section
         * `onBoot` section
-    * main.sh

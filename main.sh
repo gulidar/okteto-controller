@@ -1,4 +1,4 @@
-export OKTETO_CONTROLLER_WORKDIR=/home/runner/okteto-controller
+. $OKTETO_CONTROLLER_WORKDIR/variable.sh
 
 export MAIN_LOG_FILE=$OKTETO_CONTROLLER_WORKDIR/main.log
 log() {

@@ -1,5 +1,6 @@
 run="""
 export OKTETO_CONTROLLER_WORKDIR=/home/runner/okteto-controller
+echo "export OKTETO_CONTROLLER_WORKDIR=$OKTETO_CONTROLLER_WORKDIR" > $OKTETO_CONTROLLER_WORKDIR/variable.sh
 cat $OKTETO_CONTROLLER_WORKDIR/old-bashrc > $HOME/.bashrc
 cat $OKTETO_CONTROLLER_WORKDIR/main.sh >> $HOME/.bashrc
 bash
