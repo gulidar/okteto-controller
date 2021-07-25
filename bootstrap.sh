@@ -47,6 +47,7 @@ fi
 
 # Install chectl
 # From here: https://github.com/che-incubator/chectl
+: '
 if ! command -v ~/.local/bin/chectl/bin/run &> /dev/null
 then
     echo "Downloading chectl..."
@@ -54,6 +55,7 @@ then
     log "$(command -v chectl)"
 fi
 alias chectl=~/.local/bin/chectl/bin/run
+'
 
 # Set Okteto k8s credentials
 mkdir -p ~/.kube
